@@ -11,8 +11,19 @@
 <body>
   <main>
     <h1>What's in my MSc Thesis?</h1>
-    <!--  -->
+    
+    <p>Welcome to this interactive interface powered by a state-of-the-art AI chatbot. The chatbot utilizes the OpenAI API to provide answers to your questions. You are invited to ask anything about my MSc Thesis which investigates the use of Double Machine Learning (DML) in situations where implementing online controlled experiments is not feasible. Feel free to explore the intricate complexities and innovative solutions offered by DML through this engaging platform.</p>
+    
   </main>
-</body>
+  <script type="module">
 
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "b00a59dc-680d-43f5-bd43-5d4ed442ae02",
+        apiHost: "https://flowise-1.happyground-7f47097a.swedencentral.azurecontainerapps.io",
+    })
+  </script>
+
+</body>
+  
 </html>
